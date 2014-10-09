@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="datasourcetypelist">
+		<item>@string/OSM</item>
+		<item>@string/MIXARE</item>
+		<!-- custom input -->
+		
+
+	</string-array>
+	<string-array name="displaytypelist">
+		<item>@string/CIRCLE_MARKER</item>
+		<item>@string/NAVIGATION_MARKER</item>
+	</string-array>
+	<string-array name="defaultdatasources">
+	    <!-- item>Mockup Music|http://demos.terrier.org/v1/search.json?q=music|6|0|true</item>
+	    <item>Mockup Crowd|http://demos.terrier.org/v1/search.json?q=crowd|6|0|true</item-->
+	    <item>Terrier|http://demos.terrier.org/v1/search.json|6|0|true</item>
+	</string-array>
+	
+	<string-array name="eventdescription">
+	    <item>Title</item>
+	    <item>Description</item>
+	    <item>URI</item>
+	</string-array>
+	<string-array name="location">
+	    <item>Location Name</item>
+	    <item>Latitude</item>
+	    <item>Longtitute</item>
+	</string-array>
+</resources>

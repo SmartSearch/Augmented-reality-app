@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gr.telesto"
+    android:installLocation="auto"
+    android:versionCode="26"
+    android:versionName="0.1.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="19"
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" >
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" >
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" >
+    </uses-feature>
+
+    <permission
+        android:name="com.example.googlemaps.permission.MAPS_RECIEVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.googlemaps.permission.MAPS_RECIEVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" >
+    </supports-screens>
+
+    <application
+        android:name=".MainApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBZwfJ9Yz1XDQcOGYm90xdwgEWH4uqvqDA" />
+        <!-- android:value="AIzaSyBZwfJ9Yz1XDQcOGYm90xdwgEWH4uqvqDA"/>  debug gr.telesto -->
+        <!-- android:value="AIzaSyD7Oq2ilsl0ofU1xEfz1l3Sp81kw38adWU"/> release gr.telesto -->
+        <!-- android:value="AIzaSyBPW0og2ZneT_sWt-kBjk7uukI6KWFbSmw"/> -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MixView"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:mimeType="application/mixare-json"
+                    android:scheme="http" />
+                <data
+                    android:mimeType="application/mixare-json"
+                    android:scheme="content" />
+                <data
+                    android:mimeType="application/mixare-json"
+                    android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".MixView" />
+        </activity>
+        <!--activity android:name=".PluginLoaderActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity-->
+        <!--
+        activity
+            android:name=".MixMap"
+            android:launchMode="singleTop"
+            android:screenOrientation="user" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity
+        -->
+        <activity
+            android:name=".StreetMap"
+            android:label="@string/title_mix_map" />
+        <activity
+            android:name=".MixMap"
+            android:label="@string/title_mix_map" />
+        <activity android:name=".data.DataSource" />
+        <activity android:name=".data.DataSourceList" />
+        <activity
+            android:name="gr.telesto.details.DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity
+            android:name="gr.telesto.details.SocialDetails"
+            android:label="@string/title_activity_social_media_details" >
+        </activity>
+        <activity
+            android:name="gr.telesto.search.SearchActivity"
+            android:label="@string/title_activity_search" >
+            <!-- intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter-->
+        </activity>
+        <activity
+            android:name="gr.telesto.details.StreetViewActivity"
+            android:label="@string/title_street_map" />
+    </application>
+
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+</manifest>
