@@ -20,7 +20,6 @@
 
 package gr.telesto;
 
-import gr.telesto.R;
 import gr.telesto.data.DataSourceList;
 //import gr.telesto.poidetails.DialogDetails;
 

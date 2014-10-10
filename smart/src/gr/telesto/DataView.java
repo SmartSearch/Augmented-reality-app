@@ -24,7 +24,6 @@ import static android.view.KeyEvent.KEYCODE_DPAD_DOWN;
 import static android.view.KeyEvent.KEYCODE_DPAD_LEFT;
 import static android.view.KeyEvent.KEYCODE_DPAD_RIGHT;
 import static android.view.KeyEvent.KEYCODE_DPAD_UP;
-import gr.telesto.R;
 import gr.telesto.data.DataHandler;
 import gr.telesto.data.DataSource;
 import gr.telesto.gui.RadarPoints;
