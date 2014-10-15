@@ -360,8 +360,8 @@ public class MixView extends FragmentActivity implements SensorEventListener, On
 							// to release data.
 		setDataView(new DataView(mixViewData.getMixContext()));
 		setdWindow(new PaintScreen());
-		// setZoomLevel(); //@TODO Caller has to set the zoom. This function
-		// repaints only.
+		 setZoomLevel(); 
+		 //@TODO Caller has to set the zoom. This function repaints only.
 	}
 
 	/**

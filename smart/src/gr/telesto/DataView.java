@@ -80,7 +80,7 @@ public class DataView {
 
 	private Location curFix;
 	private DataHandler dataHandler = new DataHandler();
-	private float radius = 20;
+	private float radius = 5;
 
 	/** timer to refresh the browser */
 	private Timer refresh = null;
