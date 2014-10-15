@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2012- Peer internet solutions & Finalist IT Group
  * 
- * This file is part of mixare.
+ * This file is part of mixare and is used in Smart AR app.
  * 
  * This program is free software: you can redistribute it and/or modify it 
  * under the terms of the GNU General Public License as published by 
@@ -30,6 +30,7 @@ import java.util.TimerTask;
 
 import android.content.Context;
 import android.hardware.GeomagneticField;
+import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.widget.Toast;

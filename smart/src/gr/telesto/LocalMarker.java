@@ -1,7 +1,7 @@
 /*
- * Copyright (C) 2010- Peer internet solutions
+ * Copyright (C) 2014 Telesto
  * 
- * This file is part of mixare.
+ * This file is part of smart AR app and is a modification of mixare Local Marker  
  * 
  * This program is free software: you can redistribute it and/or modify it 
  * under the terms of the GNU General Public License as published by 

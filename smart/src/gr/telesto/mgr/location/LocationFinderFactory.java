@@ -1,7 +1,7 @@
 /*
  * Copyleft 2012 - Alessandro Staniscia
  * 
- * This file is part of mixare.
+ * This file is part of mixare  and is used in Smart AR app.
  * 
  * This program is free software: you can redistribute it and/or modify it 
  * under the terms of the GNU General Public License as published by 

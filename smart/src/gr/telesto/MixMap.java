@@ -1,8 +1,8 @@
 /*
 
- * Copyright (C) 2010- Peer internet solutions
+ * Copyright (C) 2014 Telesto
  * 
- * This file is part of mixare.
+ * This file is part of Smart AR app and is a modification of MixMap of Mixare .
  * 
  * This program is free software: you can redistribute it and/or modify it 
  * under the terms of the GNU General Public License as published by 
@@ -70,11 +70,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.maps.GeoPoint;
-//import com.google.android.maps.ItemizedOverlay;
-//import com.google.android.maps.MapView;
-//import com.google.android.maps.Overlay;
-//import com.google.android.maps.OverlayItem;
-//import com.google.android.maps.Projection;
 
 /**
  * This class creates the map view and its overlay. It also adds an overlay with
@@ -83,7 +78,6 @@ import com.google.android.maps.GeoPoint;
 public class MixMap extends FragmentActivity implements OnTouchListener,
 		OnMarkerClickListener, OnInfoWindowClickListener, DetailsOptionInterface {
 
-//	private static List<Overlay> mapOverlays;
 	private GoogleMap mMap;
 	private POIMarker initLocation;
 	private ActionBar actionBar;
@@ -301,20 +295,6 @@ public class MixMap extends FragmentActivity implements OnTouchListener,
 		this.mixContext = mixContext;
 	}
 
-//	/**
-//	 * @return the mapView
-//	 */
-//	private MapView getMapView() {
-//		return mapView;
-//	}
-
-//	/**
-//	 * @param mapView
-//	 *            the mapView to set
-//	 */
-//	private void setMapView(MapView mapView) {
-//		this.mapView = mapView;
-//	}
 
 	public void setMarkerList(List<LocalMarker> maList) {
 		markerList = maList;
@@ -324,9 +304,6 @@ public class MixMap extends FragmentActivity implements OnTouchListener,
 		return dataView;
 	}
 
-	// public List<Overlay> getMapOverlayList(){
-	// return getMapOverlays();
-	// }
 
 	public void setMapContext(Context context) {
 		thisContext = context;
@@ -343,12 +320,7 @@ public class MixMap extends FragmentActivity implements OnTouchListener,
 	public static void addWalkingPathPosition(GeoPoint geoPoint) {
 		walkingPath.add(geoPoint);
 	}
-//
-//	private boolean isPathVisible() {
-//		final String property = "pathVisible";
-//		SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-//		return settings.getBoolean(property, true);
-//	}
+
 
 	public void addMarkerstoMap() {
 		int counter = 0;

@@ -8,7 +8,7 @@
     <uses-sdk
         android:maxSdkVersion="19"
         android:minSdkVersion="14"
-        android:targetSdkVersion="17" />
+        android:targetSdkVersion="16" />
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -55,7 +55,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBZwfJ9Yz1XDQcOGYm90xdwgEWH4uqvqDA" />
+            android:value="AIzaSyD7Oq2ilsl0ofU1xEfz1l3Sp81kw38adWU" />
         <!-- android:value="AIzaSyBZwfJ9Yz1XDQcOGYm90xdwgEWH4uqvqDA"/>  debug gr.telesto -->
         <!-- android:value="AIzaSyD7Oq2ilsl0ofU1xEfz1l3Sp81kw38adWU"/> release gr.telesto -->
         <!-- android:value="AIzaSyBPW0og2ZneT_sWt-kBjk7uukI6KWFbSmw"/> -->

@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2012- Peer internet solutions & Finalist IT Group
  * 
- * This file is part of mixare.
+ * This file is part of Smart AR app and is a modification of Mixare DataConvertor file.
  * 
  * This program is free software: you can redistribute it and/or modify it 
  * under the terms of the GNU General Public License as published by 
@@ -108,9 +108,6 @@ public class DataConvertor {
 	
 	private void addDefaultDataProcessors(){
 		dataProcessors.add(new WikiDataProcessor());
-//		dataProcessors.add(new TwitterDataProcessor());
-//		dataProcessors.add(new OsmDataProcessor());
-		////// custom 
 		dataProcessors.add(new SmartDataProcessor());
 		
 	}
